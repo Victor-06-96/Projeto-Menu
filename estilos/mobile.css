@@ -1,0 +1,38 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 440px) {
+    main {
+        text-align: center;
+    }
+
+    menu {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        text-align: center;
+    }
+    
+    li {
+        color: white;
+        background-color: rgb(90, 90, 90);
+        text-decoration: none;
+        margin: 2px;
+    }
+    
+    #burger {
+        display: block;
+        padding: 5px;
+    }
+
+    #burger:hover {
+        background-color: rgb(92, 90, 90);
+        color: white;
+        cursor: pointer;
+    }
+}
