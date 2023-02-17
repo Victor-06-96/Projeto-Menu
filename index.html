@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mobile.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Menú Responsivo</h1>
         <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
@@ -51,6 +51,15 @@
             }
             else {
                 itens.style.display ='block'
+            }
+        }
+
+        function mudoutamanho() {
+            if (window.innerWidth >= 510) {
+                itens.style.display ='block'
+            }
+            else {
+                itens.style.display = 'none'
             }
         }
     </script>
